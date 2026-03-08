@@ -122,7 +122,7 @@ async def init_db():
 
 
 #BOT
-TOKEN = '8544074656:AAGVbhFmZe9hQ1QEp-Da-4xY7FvRQIVd6mQ'
+TOKEN = 'YOUR_TOKEN'
 
 dp = Dispatcher()
 
@@ -372,7 +372,7 @@ async def confirm_order(callback: types.CallbackQuery, state: FSMContext):
         await db.commit()
 
     # Отправляем уведомление админу (замените ADMIN_ID на реальный ID)
-    ADMIN_ID = 7337563103
+    ADMIN_ID = 'ADMIN_ID'
     await callback.bot.send_message(
         ADMIN_ID,
         f"*Новый заказ!*\n\n"
